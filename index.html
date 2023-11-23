@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>BookWormPalooza</title>
 </head>
+
 <body>
     <div id="navbar">
         <div id="navbar-left">
-        <h1>BookWormPalooza</h1>
+            <h1>BookWormPalooza</h1>
         </div>
         <div id="navbar-right"><button class="newBook">
-            <span>New Book</span>
-            <img class="addButton" src="images/plus.svg" alt="Add button">
-        </button>        
-            
+                <span>New Book</span>
+                <img class="addButton" src="images/plus.svg" alt="Add button">
+            </button>
+
         </div>
+    </div>
+
+    <div class="main">
+        <dialog id="dialog">
+            <input type="text" name="title" id="title" placeholder="Book Title" required>
+            <input type="text" name="author" id="author" placeholder="Book Author" required>
+            <input type="number" name="pages" id="pages" placeholder="Number of Pages" required>
+            <div class="hasRead"><label style="margin-right: 10px;">Have you read it?</label> <input type="checkbox"
+                    name="read" id="read"><br></div>
+            <button class="close" style="margin: 10px;">close</button>
+        </dialog>
     </div>
 
     <script src="main.js"></script>
 </body>
+
 </html>
